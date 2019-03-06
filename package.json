@@ -5,7 +5,7 @@
   "scripts": {
     "build": "rm -fr pkg && pack build",
     "demo": "node ./pkg/dist-node/index.bin.js diff -s './demo/vue_files/**/*.?(js|vue)' -l './demo/lang/**/*.?(json|js)'",
-    "test": "jest",
+    "test": "jest --config=jest.config.js",
     "test:watch": "jest --watch",
     "lint": "tslint src/**/*"
   },
